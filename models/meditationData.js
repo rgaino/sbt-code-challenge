@@ -18,6 +18,12 @@ const meditations = {
       name: "Third meditation",
       description: "This is the text for the third meditation.",
       emotions: ["joy", "fear", "frustration", "guilt", "happiness", "grief"]
+    },
+    {
+      id: 4,
+      name: "Fourth meditation",
+      description: "This is the text for the third meditation.",
+      emotions: ["joy", "worry", "love", "anticipation", "loneliness"]
     }
   ]
 };
