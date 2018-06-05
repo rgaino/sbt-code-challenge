@@ -1,7 +1,9 @@
-//This module sets up all API routes
+const Meditation = require("../models/Meditation");
+
 module.exports = app => {
-  //Endpoint to get meditations
   app.get("/api/meditations", (req, res) => {
-    res.send("Hi");
+    var meditation = new Meditation();
+
+    res.send(meditation.findAll());
   });
 };
