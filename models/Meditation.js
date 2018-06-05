@@ -1,8 +1,9 @@
+const meditationData = require("./meditationData");
+
 class Meditation {
+  //returns all meditations
   findAll() {
-    return {
-      meditations: [{ meditation: "stop" }, { meditation: "breathe" }, { meditation: "think" }]
-    };
+    return meditationData.meditations;
   }
 }
 

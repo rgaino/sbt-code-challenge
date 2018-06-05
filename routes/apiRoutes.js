@@ -1,4 +1,4 @@
-const Meditation = require("../models/Meditation"); //Meditation model
+const Meditation = require("../models/meditation"); //Meditation model
 
 module.exports = app => {
   //this method receives a list of emotions and return associated meditations
