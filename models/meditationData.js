@@ -3,19 +3,19 @@ const meditations = {
   meditations: [
     {
       id: 1,
-      meditation: "First meditation",
+      name: "First meditation",
       description: "This is the text for the first meditation.",
       emotions: ["anticipation", "gratitude", "loneliness", "love", "worry", "depression"]
     },
     {
       id: 2,
-      meditation: "Second meditation",
+      name: "Second meditation",
       description: "This is the text for the second meditation.",
-      emotions: ["frustration", "gratitude", "depression", "love", "worry", "grief"]
+      emotions: ["frustration", "gratitude", "depression", "love", "worry", "grief", "anger"]
     },
     {
       id: 3,
-      meditation: "Third meditation",
+      name: "Third meditation",
       description: "This is the text for the third meditation.",
       emotions: ["joy", "fear", "frustration", "guilt", "happiness", "grief"]
     }

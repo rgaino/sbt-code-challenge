@@ -9,7 +9,24 @@ class Meditation {
   //returns an array of recommended meditations
   //based on input of emotions
   findByEmotions(emotions) {
-    return { x: 1 };
+    //Create a working copy of the data since it's hardcoded and we don't want to modify it on every request
+    var meditations = meditationData.meditations;
+
+    //loop through meditations and calculate how many emotions match
+    meditations.forEach(meditation => {
+      var matches = 0;
+      meditation.emotions.forEach(emotion => {
+        if (emotions.includes(emotion)) {
+          matches++;
+        }
+      });
+      //assign the number of matches to the meditation
+      meditation.matches = matches;
+    });
+
+    //sort descending so the meditation with most matching emotions show up first
+    meditations.sort((a, b) => b.matches - a.matches);
+    return meditations;
   }
 }
 
